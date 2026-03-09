@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="acg_xe07zw6t"]
+
+[ext_resource type="Texture2D" uid="uid://acg_v9iqrk4p" id="Color" path="./RoofingTiles005_1K-PNG_Color.png"]
+[ext_resource type="Texture2D" uid="uid://acg_x2ta1qzs" id="Displacement" path="./RoofingTiles005_1K-PNG_Displacement.png"]
+[ext_resource type="Texture2D" uid="uid://acg_r9hzby0u" id="Roughness" path="./RoofingTiles005_1K-PNG_Roughness.png"]
+[ext_resource type="Texture2D" uid="uid://acg_vxhtw5g0" id="NormalGL" path="./RoofingTiles005_1K-PNG_NormalGL.png"]
+[resource]
+albedo_texture = ExtResource("Color")
+roughness_texture = ExtResource("Roughness")
+roughness_texture_channel = 4
+normal_texture = ExtResource("NormalGL")
+normal_enabled = true
+heightmap_texture = ExtResource("Displacement")
+heightmap_scale = 1.0
+heightmap_enabled = true

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Coursework" type="CMakeRunConfiguration" factoryName="CMake Application" PROGRAM_PARAMS="" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GraphicsTutorials" TARGET_NAME="Coursework" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GraphicsTutorials" RUN_TARGET_NAME="Coursework">
+    <envs />
+    <EXPLICIT_WORKING_DIRECTORY>$CMakeCurrentProjectDir$</EXPLICIT_WORKING_DIRECTORY>
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

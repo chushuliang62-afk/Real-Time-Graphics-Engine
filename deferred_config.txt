@@ -1,0 +1,168 @@
+# Deferred Rendering & Lighting Configuration
+
+[DeferredRendering]
+# Enable deferred rendering (true/false)
+enable_deferred = true
+
+# Use HDR rendering (true/false)
+use_hdr = true
+
+# HDR exposure value (0.5 - 3.0)
+hdr_exposure = 1.0
+
+[Ambient]
+# Ambient light colour (RGB, 0.0-1.0)
+colour = 0.1, 0.1, 0.15
+
+# Ambient light intensity (0.0-1.0)
+intensity = 0.3
+
+# ============================================
+# Point Lights - Multiple Light Sources
+# ============================================
+
+# Temple Interior Lights (Warm Orange - Fire/Lantern Effect)
+
+[PointLight0]
+position = 500, 60, 800
+colour = 1.0, 0.6, 0.2
+intensity = 3.0
+radius = 80.0
+anim_type = flicker
+anim_speed = 2.0
+anim_amplitude = 0.3
+anim_phase = 0.0
+
+[PointLight1]
+position = 520, 60, 820
+colour = 1.0, 0.65, 0.25
+intensity = 2.5
+radius = 70.0
+anim_type = flicker
+anim_speed = 1.8
+anim_amplitude = 0.35
+anim_phase = 1.2
+
+[PointLight2]
+position = 480, 65, 780
+colour = 1.0, 0.7, 0.3
+intensity = 2.8
+radius = 75.0
+anim_type = flicker
+anim_speed = 2.2
+anim_amplitude = 0.25
+anim_phase = 2.5
+
+[PointLight3]
+position = 510, 55, 840
+colour = 1.0, 0.55, 0.15
+intensity = 3.2
+radius = 85.0
+anim_type = flicker
+anim_speed = 1.5
+anim_amplitude = 0.4
+anim_phase = 4.0
+
+# Forest Lights (Green Fireflies - Mystical Effect)
+
+[PointLight4]
+position = 400, 80, 650
+colour = 0.3, 1.0, 0.5
+intensity = 1.5
+radius = 50.0
+anim_type = pulse
+anim_speed = 0.8
+anim_amplitude = 0.5
+anim_phase = 0.0
+
+[PointLight5]
+position = 450, 75, 700
+colour = 0.4, 1.0, 0.6
+intensity = 1.2
+radius = 45.0
+anim_type = pulse
+anim_speed = 0.6
+anim_amplitude = 0.6
+anim_phase = 1.5
+
+[PointLight6]
+position = 350, 90, 620
+colour = 0.2, 1.0, 0.4
+intensity = 1.8
+radius = 55.0
+anim_type = pulse
+anim_speed = 0.9
+anim_amplitude = 0.45
+anim_phase = 3.0
+
+[PointLight7]
+position = 420, 85, 680
+colour = 0.35, 1.0, 0.55
+intensity = 1.6
+radius = 48.0
+anim_type = pulse
+anim_speed = 0.7
+anim_amplitude = 0.55
+anim_phase = 4.5
+
+# Water Edge Lights (Cool Blue - Moon Reflection Effect)
+
+[PointLight8]
+position = 300, 20, 400
+colour = 0.4, 0.6, 1.0
+intensity = 2.0
+radius = 60.0
+anim_type = random
+anim_speed = 0.5
+anim_amplitude = 0.3
+anim_phase = 0.0
+
+[PointLight9]
+position = 350, 25, 420
+colour = 0.5, 0.7, 1.0
+intensity = 1.8
+radius = 55.0
+anim_type = random
+anim_speed = 0.6
+anim_amplitude = 0.35
+anim_phase = 2.0
+
+# Mountain Path Lights (Warm White - Guiding Lights)
+
+[PointLight10]
+position = 550, 120, 750
+colour = 1.0, 0.95, 0.8
+intensity = 2.5
+radius = 70.0
+anim_type = none
+anim_speed = 1.0
+anim_amplitude = 0.0
+anim_phase = 0.0
+
+[PointLight11]
+position = 580, 140, 720
+colour = 1.0, 0.9, 0.75
+intensity = 2.2
+radius = 65.0
+anim_type = none
+anim_speed = 1.0
+anim_amplitude = 0.0
+anim_phase = 0.0
+
+# ============================================
+# NOTES:
+# ============================================
+# - Position: (x, y, z) in world coordinates
+# - Colour: (R, G, B) values 0.0-1.0
+# - Intensity: Light brightness multiplier
+# - Radius: Effective range of the light
+# - Anim Types: none, flicker, pulse, random
+# - Anim Speed: Cycles per second
+# - Anim Amplitude: Animation strength (0.0-1.0)
+# - Anim Phase: Phase offset in radians
+#
+# Total Point Lights: 12
+# - Temple (Orange): 4 lights (flickering fire effect)
+# - Forest (Green): 4 lights (pulsing fireflies)
+# - Water (Blue): 2 lights (random moon reflection)
+# - Mountain (White): 2 lights (static path lights)
